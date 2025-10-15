@@ -1,0 +1,15 @@
+-- Buat database + tabel + contoh data
+CREATE DATABASE IF NOT EXISTS crud_produk_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE crud_produk_db;
+CREATE TABLE IF NOT EXISTS produk (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama VARCHAR(150),
+  harga INT,
+  deskripsi TEXT,
+  foto VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO produk (nama, harga, deskripsi, foto) VALUES
+('Sneaker X', 799000, 'Sneaker sporty untuk aktivitas sehari-hari.', 'prod1.jpg'),
+('Jacket Pro', 1299000, 'Jaket tahan angin dengan bahan premium.', 'prod2.jpg'),
+('Backpack L', 349000, 'Ransel besar cocok untuk kerja dan traveling.', 'prod3.jpg');
