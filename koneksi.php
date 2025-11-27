@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$user = "cruduser";
+$user = "root";
 $pass = "aliridho1";
 $db   = "crud_produk_db";
 
